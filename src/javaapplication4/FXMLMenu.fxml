@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.scene.paint.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" fx:id="menu" prefHeight="410.0" prefWidth="349.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication4.menuController">
+   <children>
+      <Button fx:id="fechar" blendMode="OVERLAY" cacheHint="QUALITY" depthTest="ENABLE" layoutX="46.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="70.0" prefWidth="257.0" text="Entrada e Saída de Ferramentas" textAlignment="CENTER" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.05" contrast="1.0" hue="0.07" saturation="0.12" />
+         </effect></Button>
+      <Button fx:id="btn_horas" blendMode="OVERLAY" cacheHint="QUALITY" depthTest="ENABLE" layoutX="47.0" layoutY="211.0" mnemonicParsing="false" onAction="#abreFormHoras" prefHeight="70.0" prefWidth="257.0" text="Hora de Serviço" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.05" contrast="1.0" hue="0.07" saturation="0.12" />
+         </effect></Button>
+      <Button fx:id="btn_status" blendMode="OVERLAY" cacheHint="QUALITY" depthTest="ENABLE" layoutX="47.0" layoutY="300.0" mnemonicParsing="false" onAction="#abreBusca" prefHeight="76.0" prefWidth="257.0" text="Status do Setor" textOverrun="CLIP">
+         <font>
+            <Font size="15.0" />
+         </font>
+         <effect>
+            <ColorAdjust brightness="0.05" contrast="1.0" hue="0.07" saturation="0.12" />
+         </effect></Button>
+      <Text fill="WHITE" layoutX="93.0" layoutY="89.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Sistema Ferramentaria" wrappingWidth="166.0">
+         <font>
+            <Font name="Arial Bold" size="15.0" />
+         </font>
+      </Text>
+      <ImageView blendMode="DARKEN" fitHeight="50.0" fitWidth="166.0" layoutX="106.0" layoutY="14.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@Logo_gpf.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>

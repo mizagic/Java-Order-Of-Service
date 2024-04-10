@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane id="AnchorPane" prefHeight="430.0" prefWidth="375.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication4.controllerHoras">
+   <children>
+      <TextField fx:id="txt_os" layoutX="164.0" layoutY="55.0" prefHeight="34.0" prefWidth="189.0" promptText="Ordem de serviço..." />
+      <TextField fx:id="txt_operador" layoutX="164.0" layoutY="103.0" prefHeight="34.0" prefWidth="189.0" promptText="Operador..." />
+      <TextField fx:id="txt_maquina" layoutX="164.0" layoutY="154.0" prefHeight="34.0" prefWidth="189.0" promptText="Número máquina..." />
+      <TextField fx:id="txt_setor" layoutX="164.0" layoutY="201.0" prefHeight="34.0" prefWidth="82.0" promptText="Setor..." />
+      <Button fx:id="btn_salvar" blendMode="GREEN" layoutX="282.0" layoutY="373.0" mnemonicParsing="false" onAction="#connectButtonHoras" prefHeight="34.0" prefWidth="68.0" text="SALVAR">
+         <font>
+            <Font name="System Bold" size="12.0" />
+         </font></Button>
+      <Label layoutX="37.0" layoutY="61.0" text="ORDEM DE SERVIÇO" textFill="#171717" />
+      <Label layoutX="37.0" layoutY="109.0" text="OPERADOR" textFill="#171717" />
+      <Label layoutX="36.0" layoutY="163.0" text="N° DA MÁQUINA" textFill="#171717" />
+      <Label layoutX="36.0" layoutY="212.0" text="SETOR" textFill="#171717" />
+      <Label layoutX="84.0" layoutY="14.0" prefHeight="21.0" prefWidth="208.0" text="APONTAMENTO DE HORAS " textFill="#171717" textOverrun="CLIP">
+         <font>
+            <Font name="System Bold" size="15.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="rb_inicio" layoutX="37.0" layoutY="327.0" mnemonicParsing="false" onAction="#rb_inicio" prefHeight="17.0" prefWidth="68.0" text="INÍCIO" textFill="#171717">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="rb_termino" layoutX="241.0" layoutY="327.0" mnemonicParsing="false" onAction="#rb_termino" prefHeight="17.0" prefWidth="82.0" text="TÉRMINO" textFill="#171717">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <Button fx:id="btnVoltarHoras" blendMode="OVERLAY" layoutX="26.0" layoutY="373.0" mnemonicParsing="false" onAction="#voltarMenu" prefHeight="34.0" prefWidth="62.0" text="MENU" />
+      <RadioButton fx:id="rb_parada" layoutX="140.0" layoutY="327.0" mnemonicParsing="false" onAction="#rb_parada" prefHeight="19.0" prefWidth="76.0" text="PARADA" textFill="#171717">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </RadioButton>
+      <Label layoutX="36.0" layoutY="256.0" text="OPERAÇÃO" textFill="#171717" />
+      <TextField fx:id="txt_operacao" layoutX="164.0" layoutY="249.0" onMouseClicked="#buscaSetor" prefHeight="34.0" prefWidth="82.0" promptText="Operação..." />
+      <Label fx:id="lbl_setor" layoutX="259.0" layoutY="205.0" prefHeight="25.0" prefWidth="92.0" />
+   </children>
+</AnchorPane>
