@@ -4,17 +4,25 @@
  */
 package Domain;
 
+
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
+
+
 /**
  *
  * @author deividi-silva
  */
 public class Status {
 
+ 
+
     private String setor;
     private String entradaesaida;
     private String data;
     private String cracha;
     private String os;
+    private ImageView imagem;
    
 
     

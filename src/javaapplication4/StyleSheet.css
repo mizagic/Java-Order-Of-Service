@@ -1,0 +1,12 @@
+.sidebar{
+    -fx-background-image: url('degradeVerde.png');
+    -fx-background-radius: 30;
+    -fx-border-radius: 30;
+}
+.sidebar2{
+    
+     -fx-background-image: url('azulzinho.jpg');
+    
+}
+
+

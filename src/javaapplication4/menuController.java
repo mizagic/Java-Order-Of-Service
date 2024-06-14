@@ -5,7 +5,6 @@
 package javaapplication4;
 
 import java.io.IOException;
-import javaapplication4.JavaApplication4;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -67,6 +66,18 @@ public class menuController {
         fechar();
 
         Parent fxmlForm = FXMLLoader.load(getClass().getResource("FXMLLogin.fxml"));
+        // Parent fxmlForm2 = FXMLLoader.load(getClass().getResource("FXMLMenu.fxml"));
+        stage.setResizable(false);
+        Scene scene = new Scene(fxmlForm);
+        stage.setScene(scene);
+        stage.show();
+
+    }
+    public void abreOS(ActionEvent event) throws IOException {
+        Stage stage = new Stage();
+        fechar();
+
+        Parent fxmlForm = FXMLLoader.load(getClass().getResource("FXMLDashboard.fxml"));
         // Parent fxmlForm2 = FXMLLoader.load(getClass().getResource("FXMLMenu.fxml"));
         stage.setResizable(false);
         Scene scene = new Scene(fxmlForm);

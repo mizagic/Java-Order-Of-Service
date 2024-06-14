@@ -31,6 +31,8 @@ import javafx.scene.control.Button;
 import javafx.scene.control.TableColumn;
 import javafx.scene.control.TableView;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.image.Image;
+import javafx.scene.image.ImageView;
 import javafx.stage.Stage;
 
 public class FXMLBuscaPaulo implements Initializable {
@@ -39,7 +41,7 @@ public class FXMLBuscaPaulo implements Initializable {
     private Button btn_buscar;
     @FXML
     private Button btn_menu;
-   
+
     @FXML
     private TableView<Status> tabelaBuscaAjust;
     @FXML
@@ -52,6 +54,8 @@ public class FXMLBuscaPaulo implements Initializable {
     private TableColumn<Status, String> os;
     @FXML
     private TableColumn<Status, String> data;
+    @FXML
+    private TableColumn<Status, Image> img;
 
     @Override
     public void initialize(URL url, ResourceBundle rb) {
@@ -66,6 +70,7 @@ public class FXMLBuscaPaulo implements Initializable {
         cracha.setCellValueFactory(new PropertyValueFactory("cracha"));
         status.setCellValueFactory(new PropertyValueFactory("entradaesaida"));
         data.setCellValueFactory(new PropertyValueFactory("data"));
+        img.setCellValueFactory(new PropertyValueFactory<>("imagem"));
 
         tabelaBuscaAjust.setItems(atualizaTabela());
 
@@ -91,15 +96,15 @@ public class FXMLBuscaPaulo implements Initializable {
     }
 
     public ObservableList<Status> atualizaTabela() {
-       
-        List<Status> status = new ArrayList<>();
 
+        List<Status> status = new ArrayList<>();
+       ImageView image = new ImageView(new Image(this.getClass().getResourceAsStream("verde.png")));
         String dateStr;
 
         Date data = new Date();
 
         String sql = "SELECT * FROM cadastro WHERE setor IN ('PAULO','AJUSTAGEM', 'TÊMPERA', 'ELETRO FIO','RETIFICA','EROSÃO') AND entradasaida = 'Entrada';";
-       
+
         try {
             PreparedStatement prs = getConexao().getConnection().prepareStatement(sql);
             ResultSet rs = prs.executeQuery();
@@ -119,6 +124,7 @@ public class FXMLBuscaPaulo implements Initializable {
                 p.setCracha(rs.getString("cracha"));//nome da coluna no BD
                 p.setEntradaesaida(rs.getString("entradasaida"));//nome da coluna no BD
                 p.setData(dateStr);
+                //p.setImagem(image);
 
                 status.add(p);
             }

@@ -8,15 +8,16 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" prefHeight="395.0" prefWidth="581.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication4.FXMLBuscaPaulo">
+<AnchorPane id="AnchorPane" prefHeight="445.0" prefWidth="674.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication4.FXMLBuscaPaulo">
    <children>
-      <TableView fx:id="tabelaBuscaAjust" layoutX="10.0" layoutY="57.0" onSort="#initTablePaulo" prefHeight="332.0" prefWidth="564.0">
+      <TableView fx:id="tabelaBuscaAjust" layoutX="10.0" layoutY="57.0" onSort="#initTablePaulo" prefHeight="388.0" prefWidth="623.0">
         <columns>
           <TableColumn fx:id="setor" prefWidth="109.0" text="SETOR" />
           <TableColumn fx:id="os" prefWidth="82.0" text="OS" />
             <TableColumn fx:id="status" prefWidth="127.0" text="STATUS" />
-            <TableColumn fx:id="data" prefWidth="119.0" text="DATA" />
-            <TableColumn fx:id="cracha" prefWidth="126.0" text="OPERADOR" />
+            <TableColumn fx:id="data" prefWidth="78.0" text="DATA" />
+            <TableColumn fx:id="cracha" prefWidth="88.0" text="OPERADOR" />
+            <TableColumn fx:id="img" prefWidth="152.0" text="Imagem" />
         </columns>
       </TableView>
       <Button fx:id="btn_buscar" alignment="CENTER" blendMode="SRC_ATOP" contentDisplay="TOP" depthTest="DISABLE" graphicTextGap="1.0" layoutX="28.0" layoutY="16.0" mnemonicParsing="false" onAction="#initTablePaulo" pickOnBounds="false" text="Buscar" textOverrun="CLIP">

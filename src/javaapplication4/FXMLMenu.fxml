@@ -11,23 +11,23 @@
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<AnchorPane id="AnchorPane" fx:id="menu" prefHeight="410.0" prefWidth="349.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication4.menuController">
+<AnchorPane id="AnchorPane" fx:id="menu" prefHeight="415.0" prefWidth="349.0" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javaapplication4.menuController">
    <children>
-      <Button fx:id="fechar" blendMode="OVERLAY" cacheHint="QUALITY" depthTest="ENABLE" layoutX="46.0" layoutY="122.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="70.0" prefWidth="257.0" text="Entrada e Saída de Ferramentas" textAlignment="CENTER" textOverrun="CLIP">
+      <Button fx:id="fechar" blendMode="OVERLAY" cacheHint="QUALITY" depthTest="ENABLE" layoutX="46.0" layoutY="102.0" mnemonicParsing="false" onAction="#handleSubmitButtonAction" prefHeight="70.0" prefWidth="257.0" text="Entrada e Saída de Ferramentas" textAlignment="CENTER" textOverrun="CLIP">
          <font>
             <Font size="15.0" />
          </font>
          <effect>
             <ColorAdjust brightness="0.05" contrast="1.0" hue="0.07" saturation="0.12" />
          </effect></Button>
-      <Button fx:id="btn_horas" blendMode="OVERLAY" cacheHint="QUALITY" depthTest="ENABLE" layoutX="47.0" layoutY="211.0" mnemonicParsing="false" onAction="#abreFormHoras" prefHeight="70.0" prefWidth="257.0" text="Hora de Serviço" textOverrun="CLIP">
+      <Button fx:id="btn_horas" blendMode="OVERLAY" cacheHint="QUALITY" depthTest="ENABLE" layoutX="46.0" layoutY="174.0" mnemonicParsing="false" onAction="#abreFormHoras" prefHeight="70.0" prefWidth="257.0" text="Hora de Serviço" textOverrun="CLIP">
          <font>
             <Font size="15.0" />
          </font>
          <effect>
             <ColorAdjust brightness="0.05" contrast="1.0" hue="0.07" saturation="0.12" />
          </effect></Button>
-      <Button fx:id="btn_status" blendMode="OVERLAY" cacheHint="QUALITY" depthTest="ENABLE" layoutX="47.0" layoutY="300.0" mnemonicParsing="false" onAction="#abreBusca" prefHeight="76.0" prefWidth="257.0" text="Status do Setor" textOverrun="CLIP">
+      <Button fx:id="btn_status" blendMode="OVERLAY" cacheHint="QUALITY" depthTest="ENABLE" layoutX="46.0" layoutY="249.0" mnemonicParsing="false" onAction="#abreBusca" prefHeight="76.0" prefWidth="257.0" text="Status do Setor" textOverrun="CLIP">
          <font>
             <Font size="15.0" />
          </font>
@@ -44,5 +44,13 @@
             <Image url="@Logo_gpf.png" />
          </image>
       </ImageView>
+      <Button fx:id="btn_os" blendMode="OVERLAY" cacheHint="QUALITY" depthTest="ENABLE" layoutX="46.0" layoutY="330.0" mnemonicParsing="false" onAction="#abreOS" prefHeight="76.0" prefWidth="257.0" text="Controle de OS" textOverrun="CLIP">
+         <effect>
+            <ColorAdjust brightness="0.05" contrast="1.0" hue="0.07" saturation="0.12" />
+         </effect>
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Button>
    </children>
 </AnchorPane>

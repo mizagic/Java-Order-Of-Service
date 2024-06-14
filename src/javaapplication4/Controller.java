@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/javafx/FXMLController.java to edit this template
- */
+
 package javaapplication4;
 
 import static Banco.ObjectFactory.getConexao;
@@ -52,6 +49,9 @@ public class Controller implements Initializable {
     private TextField txt_cracha;
     @FXML
     private Button btn_salvar;
+    
+    @FXML
+    private Button btn_os;
     @FXML
     private Button btn_encerra;
     @FXML
